@@ -1,12 +1,6 @@
 name: Trigger Crossbow build
 
-on: 
-  workflow_dispatch:
-    inputs:
-      arrow_branch:
-        description: 'Arrow branch to build'
-        required: true
-
+on: workflow_dispatch
 env:
   CROSSBOW_GITHUB_TOKEN: ${{ secrets.CROSSBOW_GITHUB_TOKEN }}
   ARCHERY_DEFAULT_BRANCH: 'master'
